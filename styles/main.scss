@@ -1,0 +1,50 @@
+@use './variables' as *;
+
+body {
+  font-family: sans-serif;
+  max-width: 100%;
+  background-color: $white;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+nav {
+  width: 100%;
+  position: relative;
+  ul {
+    background-color: $bg-second;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    li {
+      list-style-type: none;
+      display: inline;
+      a {
+        text-decoration: none;
+        transition: 0.3s;
+        background-color: $bg-three;
+        color: $text-color;
+        &:hover {
+          background-color: $bg-three;
+          transition: $transition;
+          color: $light-text;
+        }
+      }
+    }
+  }
+}
+
+.container {
+  background-color: $bg-second;
+  img {
+    max-width: 8rem;
+    min-width: 5rem;
+  }
+}
+
+.rounded-image {
+  border-radius: 50%;
+  border: 1px $black;
+}
