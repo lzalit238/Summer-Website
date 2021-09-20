@@ -1,0 +1,44 @@
+$bg-main: #6aa792;
+$bg-main-dark: #5a8b7a;
+$bg-second: #8570b9;
+$bg-three: #F59A84; 
+
+$text-color: #551A8B;
+$light-text: #fefefe;
+
+
+body {
+    font-family: sans-serif;
+    max-width: 100%;
+    background-color: $bg-main;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+
+    nav {
+        width: 100%;
+        position: absolute;
+        ul {
+            background-color: $bg-second;
+            padding-top: .5rem;
+            padding-bottom: .5rem;
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+            li {
+                list-style-type: none;
+                display: inline;
+                a {
+                    text-decoration: none;
+                    transition: 0.3s;
+
+                    &:hover{
+                        background-color: $bg-three;
+                        color: $light-text;
+                    }
+                }
+            }
+        }
+    
+    }
+    
+}
